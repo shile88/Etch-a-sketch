@@ -1,0 +1,25 @@
+.board {
+    --grid-size: 4;
+    /* Start with 4x4 */
+    display: grid;
+    width: 1400px;
+    height: 650px;
+    grid-template: repeat(var(--grid-size), 1fr) / repeat(var(--grid-size), 1fr);
+    background-color: white;
+    margin: auto;
+  }
+  
+  .square {
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+  }
+  
+  .buttons {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  #btn {
+    margin-right: 15px;
+  }
